@@ -19,11 +19,12 @@ function ImageSelection({uploadedImage}){
             canvas.width = image.width;
             canvas.height = image.height;
             canvas.getContext('2d').drawImage(image, 0, 0);
-        }
+        
+            const imageData = canvas.getContext('2d').getImageData(0, 0, canvas.width, canvas.height);
 
-        const imageData = canvas.getContext('2d').getImageData(0, 0, canvas.width, canvas.height);
+            uploadedImage(imageData);
+        };
 
-        uploadedImage(imageData);
     }
 
     return (
@@ -33,7 +34,7 @@ function ImageSelection({uploadedImage}){
             <canvas className="ImageSelectionCanvas" ref={setCanvasReference} />
         </div>
 
-    )
+    );
 }
 
 export default ImageSelection;
