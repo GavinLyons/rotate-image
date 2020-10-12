@@ -22,7 +22,7 @@ function App() {
     }
     
     try {
-      const radians = parseFloat((angle * (Math.PI / 180).toFixed(2)));
+      const radians = parseFloat((angle * (Math.PI / 180)).toFixed(2));
     
       const performanceStart = performance.now(),
         rotator = new RotateImage(),
