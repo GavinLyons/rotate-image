@@ -48,10 +48,10 @@ class RotateImage{
     * This method takes an array of data, width and height of the image
     * and an angle of rotation to apply to the image.
     * 
-    * Calculates the fimensions of the rotated image based on requested angle.
+    * Calculates the dimensions of the rotated image based on requested angle.
     * 
     * Sequentially reads the source image data, maps every 4 blocks to a pixel
-    * location, rotates it nad then maps the image data to the target location
+    * location, rotates it and then maps the image data to the target location
     *
     */
 

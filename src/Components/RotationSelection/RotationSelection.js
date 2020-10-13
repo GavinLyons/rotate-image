@@ -17,7 +17,7 @@ function RotationSelection({rotate}){
                 <label> degrees</label>
             </div>
             <div className="RotationButton">
-                <button onClick={rotateImage}>Rotate</button>
+                <button onClick={rotateImage}>Apply Rotation</button>
             </div>
         </div>
 
