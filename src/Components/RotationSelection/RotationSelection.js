@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 
-import './Rotation.css';
+import './RotationSelection.css';
 
-function Rotation({rotate}){
+function RotationSelection({rotate}){
     const [angle, setAngle] = useState(0.0);
 
     const rotateImage = () => {
@@ -24,4 +24,4 @@ function Rotation({rotate}){
     )
 }
 
-export default Rotation;
+export default RotationSelection;

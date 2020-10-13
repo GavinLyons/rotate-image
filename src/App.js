@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 import DisplayImage from './Components/DisplayImage/DisplayImage';
 import ImageSelection from './Components/ImageSelection/ImageSelection';
-import Rotation from './Components/Rotation/Rotation';
+import RotationSelection from './Components/RotationSelection/RotationSelection';
 import RotateImage from "./Rotate";
 
 import './App.css';
@@ -45,7 +45,7 @@ function App() {
     <div className="App">
       <h1>Image Rotate UI</h1>
       <ImageSelection uploadedImage={uploadedImage} />
-      <Rotation rotate={rotate}></Rotation>
+      <RotationSelection rotate={rotate}></RotationSelection>
       <DisplayImage title="Uploaded Image" displayImage={selecetedImage} />
       <DisplayImage title="Rotated Image" subtitle={rotationTime > 0 ? '(Completion Time ' + rotationTime + ' ms)' : ""} displayImage={rotatedImage} />  
     </div>
